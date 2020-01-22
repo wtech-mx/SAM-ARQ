@@ -1,0 +1,146 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 16px;
+  background: #fff;
+  /* Center slide text vertically */
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* Text Overlay */
+#lab_video_text_overlay h2 {
+  font-size:4em
+}
+
+#lab_video_text_overlay .btn {
+  border-radius:0;
+  text-transform:uppercase;
+  font-weight:200;
+}
+#lab_video_text_overlay .btn-warning {
+  background-color:#F5D328;
+}
+
+#lab_video_text_overlay {
+  position: absolute;
+  color: #FFF;
+  width: 100%;
+  top: 25%;
+}
+
+#lab_video_text_overlay .container {
+  text-align: center;
+  margin: 0px auto;
+//  background-color: #669900;
+}
+
+@media screen and (max-width:991px) {
+  #lab_video_text_wrap {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width:650px) {
+  #lab_video_text_wrap {
+    height: 250px;
+  }
+  #lab_video_text_overlay h2 {
+    font-size: 2em;
+  }
+  #lab_video_text_overlay p {
+    font-size: .9em;
+  }
+  
+}
+
+.button-animate {
+  display: inline-block;
+  font-weight: bold;
+  padding:25px 25px;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+font-size: 12px;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 12px;
+-webkit-box-shadow: 3px 6px 16px 3px rgba(0,0,0,0.8);
+-moz-box-shadow: 3px 6px 16px 3px rgba(0,0,0,0.8);
+box-shadow: 3px 6px 16px 3px rgba(0,0,0,0.8);
+
+
+}
+.button-animate:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d193a;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button-animate:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #BBB9BA;
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button-animate:hover {
+  color: #fff;
+}
+.button-animate:hover:before {
+  width: 100%;
+}
+
+
+@media screen and (max-width:650px) {
+  .button-animate{
+    padding: 10px 5px;
+    font-size: 8px;
+  }
+  .swiper-container {
+  top: 66px;
+  }
+}
+
+      @keyframes pulse{
+  0% {
+    transform: scale(0.9, 0.9);
+  }
+  25% {
+    transform: scale(0.9, 0.9);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(0.9, 0.9);
+  }
+}

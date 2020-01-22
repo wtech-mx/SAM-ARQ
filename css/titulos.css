@@ -1,0 +1,89 @@
+                @font-face{
+                      font-family: "Eras";
+                        src: url("../fonts/Eras-Medium-ITC_15903.ttf");        
+                    }
+                @media screen and (min-width: 480px) {
+
+                .card-text{
+                    display: none;
+                }
+
+                .card-text-blanco{
+                    display: none;
+                }
+
+                .hit-the{
+                color: #0d193a;
+                font-size: 65px;
+                font-family:Eras;
+                }
+
+                .hit-the-floor {
+                color: #0d193a;
+                font-size: 70px;
+                font-weight: bold;
+                font-family: Eras;
+                text-shadow: 0 1px 0 #0d193a, 0 2px 0 #0B1632, 0 3px 0 #09122A, 0 4px 0 #070D1F, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1);
+                text-align: center;
+                    }
+
+                .button-sam-left{
+                left:-150px;
+                cursor: pointer;
+                position:relative;
+                text-decoration:none;
+                font-size: 10px;
+                }
+                .button-sam-rigth{
+                right:-150px;  
+                }
+                }
+
+                @media screen and (max-width: 480px){
+
+                 .hit-the-floor{
+                padding: 20px 1px 1px 1px;
+                font-size:35px;
+                text-shadow: 0;
+                display: none;
+                }
+
+                .hit-the{
+                    display: none;
+                }
+
+                .card-text{
+                    padding: 20px 1px 1px 1px;
+                    font-size: 25px;
+                    font-family: Eras;
+                }
+                .card-text-blanco{
+                    padding: 30px 1px 1px 1px;
+                    font-size: 25px;
+                    font-family: Eras;
+                    color: #fff;
+                }
+                .card-text strong{
+                    padding: 30px 1px 1px 1px;
+                    font-size: 30px;
+                    font-family: Eras;     
+                }
+                .card-text-blanco strong {
+                    padding: 30px 1px 1px 1px;
+                    font-size: 35px;
+                    font-family: Eras;  
+                     
+                }
+
+                .card{
+                    left: 35px;
+                }
+
+                .button-sam-left{
+                left: 150px;
+                }
+
+                .button-sam-rigth{
+                right: 150px;
+                }
+            }

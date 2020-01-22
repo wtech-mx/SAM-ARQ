@@ -1,0 +1,5 @@
+User-Agent: * 
+Disallow: /wp- 
+Crawl-delay: 120
+Allow: /wp-content/uploads/ 
+Sitemap: http://samarquitectura.com.mx/sitemap.xml
